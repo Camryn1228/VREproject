@@ -7,5 +7,5 @@ def run():
     print("[*] Listing imported DLLs...") # print for data list section
     for entry in pe.DIRECTORY_ENTRY_IMPORT:
         print('\t' + entry.dll.decode('utf-8'))
-
-
+        
+print(run())
