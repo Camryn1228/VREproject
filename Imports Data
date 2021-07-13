@@ -8,4 +8,4 @@ def run():
     for entry in pe.DIRECTORY_ENTRY_IMPORT:
         print('\t' + entry.dll.decode('utf-8'))
 
-print(run())
+
