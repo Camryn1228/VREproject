@@ -1,0 +1,10 @@
+import VREproject-main
+import ExtractingData
+import Importsandexports
+
+if __name__=='__groupcombo__':
+
+    exe_path = input("Enter the path of your executable: ")  # path to executable ++.
+
+    ExtractingData.extract(exe_path)
+    Importsandexports.run(exe_path)
