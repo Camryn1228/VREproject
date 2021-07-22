@@ -1,5 +1,6 @@
 import psycopg2
 
+
 def postgres_database():
    #establishing the connection
    conn = psycopg2.connect(
@@ -16,6 +17,12 @@ def postgres_database():
    print("Connection established to: ",data)
 
    #Closing the connection
-   conn.close()
+   return conn.cursor()
+
+
+
+postgres_database()
+
+
 
 
