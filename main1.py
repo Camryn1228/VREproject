@@ -1,7 +1,7 @@
 import ExtactingData
 import ImportsandExports
 
-if __name__=='__groupcombo__':
+if __name__=='__main__':
 
     exe_path = input("Enter the path of your executable: ")  # path to executable ++.
 

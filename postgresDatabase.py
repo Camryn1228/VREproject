@@ -1,10 +1,9 @@
 import psycopg2
 
-
 def postgres_database():
    #establishing the connection
    conn = psycopg2.connect(
-      database="malwaresim", user='postgres', password='peaCeandlove', host='127.0.0.1', port= '5432'
+      database="malwaresim", user='postgres', password='9248089Ck!!', host='127.0.0.1', port= '5432'
    )
    #Creating a cursor object using the cursor() method
    cursor = conn.cursor()
@@ -17,12 +16,6 @@ def postgres_database():
    print("Connection established to: ",data)
 
    #Closing the connection
-   return conn.cursor()
-
-
-
-postgres_database()
-
-
+   conn.close()
 
 
