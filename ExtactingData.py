@@ -12,6 +12,16 @@ def extract(enterpath):
 
     print(pe.sections[0]) #prints the data from sections
 
+    n=13
+
+    def divide_chunks(l, n):
+
+        for i in range(0, len(l), n):
+            yield l[i:i + n]
+    x= list(divide_chunks(pe.sections,n))
+
+    print(x)
+
     postgresDatabase.postgres_database()
 
 
